@@ -1,0 +1,33 @@
+{
+	"name": "react-native-input-prompt",
+	"version": "1.0.0",
+	"description":
+		"A cross-platform user input prompt component for React Native.",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\""
+	},
+	"author": {
+		"name": "SkrewEverything",
+		"email": "skreweverything@gmail.com",
+		"url": "https://www.skreweverything.com"
+	},
+	"homepage":
+		"https://github.com/SkrewEverything/react-native-input-prompt#readme",
+	"repository": "github:SkrewEverything/react-native-input-prompt",
+	"keywords": [
+		"react-native",
+		"react",
+		"prompt",
+		"input",
+		"dialog",
+		"user",
+		"react-component",
+		"ios",
+		"android"
+	],
+	"license": "MIT",
+	"devDependencies": {
+		"babel-preset-react-native": "^4.0.0"
+	}
+}

@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+# Ignore Mac DS_Store files
+.DS_Store
+*.DS_Store
