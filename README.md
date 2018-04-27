@@ -18,21 +18,21 @@ $ npm install --save react-native-input-prompt
 
 ```js
 <Prompt
-	visible={this.state.visible}
-	title="Say Something"
-	placeholder="Type Something"
-	onCancel={() =>
-		this.setState({
-			text: "User Cancelled!",
-			visible: !this.state.visible
-		})
-	}
-	onSubmit={text =>
-		this.setState({
-			text: "User submitted: " + text,
-			visible: !this.state.visible
-		})
-	}
+    visible={this.state.visible}
+    title="Say Something"
+    placeholder="Type Something"
+    onCancel={() =>
+        this.setState({
+            text: "User Cancelled!",
+            visible: !this.state.visible
+        })
+    }
+    onSubmit={text =>
+        this.setState({
+            text: "User submitted: " + text,
+            visible: !this.state.visible
+        })
+    }
 />
 ```
 
