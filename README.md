@@ -7,6 +7,8 @@ A cross-platform input prompt component for React Native.
 ```sh
 $ npm install --save react-native-input-prompt
 ```
+## Demo
+
 
 | iOS                    | Android                 |
 | ---------------------- | ----------------------- |
