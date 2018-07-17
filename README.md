@@ -42,6 +42,7 @@ Props:
 
 *   `title` (string, required): The title to be displayed on the prompt.
 *   `visible` (boolean, required): When `true`, the prompt is displayed, closes otherwise.
+*   `opacity` (number): Opacity of the prompt. Default value: 0.8
 *   `placeholder` (string, required): The placeholder text of the prompt.
 *   `cancelText` (string): The string that is displayed on the cancel button (defaults to "Cancel").
 *   `submitText` (string): The string that is displayed on the submit button (defaults to "Submit").
