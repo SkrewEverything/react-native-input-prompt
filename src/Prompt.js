@@ -8,6 +8,7 @@ export default class Prompt extends Component {
     title: PropTypes.string.isRequired,
     visible: PropTypes.bool.isRequired,
     placeholder: PropTypes.string.isRequired,
+    defaultValue: PropTypes.string,
     cancelText: PropTypes.string,
     submitText: PropTypes.string,
     cancelButtonStyle: PropTypes.object,
@@ -25,6 +26,7 @@ export default class Prompt extends Component {
     title: 'Title',
     visible: false,
     placeholder: 'Placeholder',
+    defaultValue: '',
     cancelText: 'Cancel',
     submitText: 'Submit',
     cancelButtonStyle: {},
@@ -76,6 +78,7 @@ export default class Prompt extends Component {
               onChangeText={this._onChangeText.bind(this)}
               onSubmitEditing={this._onSubmit.bind(this)}
               autoFocus
+              value={this.props.defaultValue}
             />
             <View style={styles.buttonsOuterView}>
               <View style={styles.buttonsInnerView}>
