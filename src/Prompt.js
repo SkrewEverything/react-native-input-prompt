@@ -16,6 +16,7 @@ export default class Prompt extends Component {
 		title: PropTypes.string.isRequired,
 		visible: PropTypes.bool.isRequired,
 		placeholder: PropTypes.string.isRequired,
+		keyboardType: PropTypes.string,
 		cancelText: PropTypes.string,
 		submitText: PropTypes.string,
 		cancelButtonStyle: PropTypes.object,
@@ -32,6 +33,7 @@ export default class Prompt extends Component {
 		title: "Title",
 		visible: false,
 		placeholder: "Placeholder",
+		keyboardType:'default',
 		cancelText: "Cancel",
 		submitText: "Submit",
 		cancelButtonStyle: {},
@@ -79,6 +81,7 @@ export default class Prompt extends Component {
 						</Text>
 						<TextInput
 							placeholder={this.props.placeholder}
+							keyboardType={this.props.keyboardType}
 							style={styles.textInput}
 							onChangeText={this._onChangeText.bind(this)}
 							onSubmitEditing={this._onSubmit.bind(this)}
