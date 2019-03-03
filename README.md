@@ -7,8 +7,8 @@ A cross-platform input prompt component for React Native.
 ```sh
 $ npm install --save react-native-input-prompt
 ```
-## Demo
 
+## Demo
 
 | iOS                    | Android                 |
 | ---------------------- | ----------------------- |
@@ -18,21 +18,23 @@ $ npm install --save react-native-input-prompt
 
 ```js
 <Prompt
-    visible={this.state.visible}
-    title="Say Something"
-    placeholder="Type Something"
-    onCancel={() =>
-        this.setState({
-            text: "User Cancelled!",
-            visible: !this.state.visible
-        })
-    }
-    onSubmit={text =>
-        this.setState({
-            text: "User submitted: " + text,
-            visible: !this.state.visible
-        })
-    }
+  visible={this.state.visible}
+  title="Say Something"
+  placeholder="Type Something"
+  onCancel={() =>
+    this.setState({
+      text: 'User Cancelled!',
+      visible: !this.state.visible
+    })
+  }
+  onSubmit={text =>
+    this.setState({
+      text: 'User submitted: ' + text,
+      visible: !this.state.visible
+    })
+  }
+  textInputProps={{ autoCapitalize: 'none', autoCorrect: false }}
+  isTransparent={false}
 />
 ```
 
@@ -40,19 +42,21 @@ $ npm install --save react-native-input-prompt
 
 Props:
 
-*   `title` (string, required): The title to be displayed on the prompt.
-*   `visible` (boolean, required): When `true`, the prompt is displayed, closes otherwise.
-*   `placeholder` (string, required): The placeholder text of the prompt.
-*   `cancelText` (string): The string that is displayed on the cancel button (defaults to "Cancel").
-*   `submitText` (string): The string that is displayed on the submit button (defaults to "Submit").
-*   `cancelButtonStyle` (object): To change the style of "Cancel button".
-*   `submitButtonStyle` (object): To change the style of "Submit button".
-*   `cancelButtonTextStyle`(object): To change the style of text displayed inside "Cancel button".
-*   `submitButtonTextStyle` (object): To change the style of text displayed inside "Submit button".
-*   `titleStyle` (object): To change the style of title text.
-*   `onChangeText` (function): Function that is called with user input when it changes.
-*   `onSubmit` (function, required): Function that is called when user presses on "Submit button".
-*   `onCancel` (function, required): Function that is called when user presses on "Cancel button".
+- `title` (string, required): The title to be displayed on the prompt.
+- `visible` (boolean, required): When `true`, the prompt is displayed, closes otherwise.
+- `placeholder` (string, required): The placeholder text of the prompt.
+- `cancelText` (string): The string that is displayed on the cancel button (defaults to "Cancel").
+- `submitText` (string): The string that is displayed on the submit button (defaults to "Submit").
+- `cancelButtonStyle` (object): To change the style of "Cancel button".
+- `submitButtonStyle` (object): To change the style of "Submit button".
+- `cancelButtonTextStyle`(object): To change the style of text displayed inside "Cancel button".
+- `submitButtonTextStyle` (object): To change the style of text displayed inside "Submit button".
+- `titleStyle` (object): To change the style of title text.
+- `onChangeText` (function): Function that is called with user input when it changes.
+- `onSubmit` (function, required): Function that is called when user presses on "Submit button".
+- `onCancel` (function, required): Function that is called when user presses on "Cancel button".
+- `textInputProps` (object): To map override TextInput props
+- `isTransparent` (bool): To make prompt input background not transparent (defaults to true)
 
 ## Contributing
 
