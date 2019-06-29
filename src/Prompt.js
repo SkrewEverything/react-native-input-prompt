@@ -25,7 +25,8 @@ export default class Prompt extends Component {
 		titleStyle: PropTypes.object,
 		onChangeText: PropTypes.func,
 		onSubmit: PropTypes.func.isRequired,
-		onCancel: PropTypes.func.isRequired
+		onCancel: PropTypes.func.isRequired,
+		secureTextEntry: PropTypes.bool,
 	};
 
 	static defaultProps = {
@@ -41,7 +42,8 @@ export default class Prompt extends Component {
 		titleStyle: {},
 		onChangeText: () => {},
 		onSubmit: () => {},
-		onCancel: () => {}
+		onCancel: () => {},
+		secureTextEntry: false,
 	};
 	constructor() {
 		super();
@@ -83,6 +85,7 @@ export default class Prompt extends Component {
 							onChangeText={this._onChangeText.bind(this)}
 							onSubmitEditing={this._onSubmit.bind(this)}
 							autoFocus={true}
+							secureTextEntry={this.props.secureTextEntry}
 						/>
 						<View style={styles.buttonsOuterView}>
 							<View style={styles.buttonsInnerView}>
